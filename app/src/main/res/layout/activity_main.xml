@@ -54,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Email" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -72,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter PhoneNumber" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +91,8 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Password" />
+            android:hint="Enter Password"
+            android:password="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -139,5 +142,39 @@
         app:layout_constraintStart_toEndOf="@+id/tilUserName"
         app:layout_constraintTop_toBottomOf="@+id/tvBillz"
         app:srcCompat="@drawable/baseline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilUserName"
+        app:layout_constraintEnd_toStartOf="@+id/tvBillz"
+        app:srcCompat="@drawable/bils" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tilPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tilUserName"
+        app:srcCompat="@drawable/baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="7dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tilEmail"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/baseline_email_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
